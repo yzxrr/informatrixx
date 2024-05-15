@@ -134,9 +134,21 @@ body {
     transform: translateY(0);
   }
   
+.presection{
+  display: flex;
+  flex-wrap: wrap; /*fa adattare il testo al bordo del blocco*/ 
+  justify-content: space-between; /*crea spazio tra i blocchi */ 
+  padding: 20px;
+}
+
   .section{
-    width: 95%;
-    padding: 0%; 
+    width: calc(25% - 20px); 
+    background: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;  /*limita fin quando si puo scrivere, in questo caso al bordo box*/ 
+    margin-bottom: 20px;
+    width: 75%; /* larghezza del box */
+    /*padding: %; per eventuale padding*/ 
     display: flex; 
     flex-direction: column;  
   }
