@@ -1,0 +1,81 @@
+body {
+    margin: 0; /* imposta i margini */ 
+    padding: 0; /* imposta quanto spazio ci deve essere */ 
+    font-family: Arial, sans-serif; /* imposta il font */ 
+  }
+  
+  .container {
+    width: 100%; /* imposta la larghezza del container */ 
+    height: 100vh; /* imposta l'altezza del container */ 
+    display: flex; /* da al container layout flexbox (letteralmente scatola flessibile) */ 
+    flex-direction: column; /* specifica la direzione degli elementi in modo colonnale */ 
+  }
+  
+  .intestazione {
+    background: linear-gradient(to bottom right, #4deaff, #0678d4); /* imposta il colore del background dell'intestazione */ 
+    color: white; /* imposta il colore del testo*/ 
+    padding:30px; 
+    font-size: 40px; /* imposta la grandezza del font */ 
+  }
+  
+  .sottotitolo{
+    font-size: 30px;
+  }
+  
+  .blocchi {
+    display: flex;
+    flex-wrap: wrap; /*fa adattare il testo al bordo del blocco*/ 
+    justify-content: space-between; /*crea spazio tra i blocchi */ 
+    padding: 20px;
+  }
+  
+  .contenutoblocchi {
+    width: calc(25% - 20px); 
+    background: #f2f2f2;
+    padding: 20px;
+    box-sizing: border-box;  /*limita fin quando si puo scrivere, in questo caso al bordo box*/ 
+    margin-bottom: 20px;
+  }
+  
+  .infobox { /* stile per il container dell'infobox*/ 
+    display: flex;
+    justify-content: space-between; /*crea spazio tra le informazioni dell'infobox */ 
+    margin-top: 50px;
+    padding: 20px;
+    margin-top: auto; /* mette a fondo pagina */
+    color: white;
+    background-color: #222222;
+  }
+  
+  .contenuto-infobox {
+    flex: 1;
+  }
+  
+  .lato-infobox {
+    width: 30%;
+  }
+  
+  .infobox h2, .infobox h3 {
+    margin-top: 0; /*imposta il margine dell'infobox a zero*/ 
+  }
+  
+  .infobox ul {
+    padding: 0;   /* imposta quanto distante sia la lista dal resto delle info*/ 
+    list-style: none;
+  }
+  
+  .infobox ul li {
+    margin-bottom: 3px; /*imposta quanto siano grandi i caratteri della lista*/ 
+  }
+  
+  h1, h2 {
+    margin-top: 0;
+  }
+  
+  p {
+    font-size: 1.2rem; /* imposta la grandezza del tag <p> utilizzato per la descrizione*/ 
+  }
+  
+  a {
+    color: rgb(240, 54, 21); /*colora gli hyperlink del codice rgb selezionato (in questo caso rosso)*/
+  }
